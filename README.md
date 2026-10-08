@@ -1,14 +1,20 @@
-# Welcome to your Lovable project
+# Pau Brasil Landing Page Refactor
+
+Eu preciso fazer uma landing page com base numa que já está pronta, que a gente até rodou inclusive. Preciso que você modele toda ela. Vou te mandar o link, tá bom? E vê se me fala primeiro se é possível.
+
+https://lojapaubrasil.com.br/botafora/
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://pau-brasil-deals.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/78620958-68b6-4a22-b79b-b15565beba06).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +26,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
