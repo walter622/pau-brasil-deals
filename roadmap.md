@@ -1,4 +1,5 @@
 # Black Pau Brasil
+- [x] Rebuild design/layout per the luxury design brief (serif headings, warm backgrounds, split sections, event band, tags, carousel, floating WhatsApp); verify desktop and mobile.
 - [x] Correct the rejected design against the original reference, preserving approved copy and photos; verify composition and interactions.
 - [x] Match the original landing-page design using current copy and approved photos, add the supplied campaign seal, and verify.
 - [x] Restore the latest supplied document copy verbatim without invented or rewritten text; verify against the original.
