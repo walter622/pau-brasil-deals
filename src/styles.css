@@ -124,7 +124,7 @@
  .section-space { padding:52px 0; } .section-heading { font-size:38px; } .catalogue-heading { align-items:center; }
  .catalogue-item { flex-basis:88%; } .catalogue-track { gap:16px; }
  .story-grid,.faq-grid { grid-template-columns:1fr; gap:32px; } .benefits { grid-template-columns:1fr; gap:32px; }
- .history-grid,.delivery-grid,.testimonials,.differentials { grid-template-columns:1fr; gap:28px; }
+ .story-grid,.faq-grid,.history-grid,.delivery-grid,.testimonials,.differentials { grid-template-columns:minmax(0,1fr); gap:28px; }
  .differentials { gap:0; } .delivery-symbol { justify-content:start; } .delivery-symbol svg { width:100px; height:100px; }
  .closing { padding:48px 0; } .footer-inner { flex-direction:column; align-items:start; padding-bottom:110px; }
  .mobile-vip { display:block; position:fixed; bottom:0; left:0; right:0; z-index:30; background:var(--hero); padding:12px 20px max(12px,env(safe-area-inset-bottom)); border-top:1px solid var(--hero-line); }
