@@ -11,7 +11,8 @@ import logo from '@/assets/logo.asset.json';
 import family from '@/assets/family.asset.json';
 import chairs from '@/assets/chairs.asset.json';
 import benches from '@/assets/benches.asset.json';
-import buffet from '@/assets/buffet.asset.json';
+import diningTable from '@/assets/mesa-showroom.jpeg.asset.json';
+import sideboard from '@/assets/aparador-showroom.jpeg.asset.json';
 
 export const Route = createFileRoute('/')({
   head: () => ({ meta: [
@@ -26,10 +27,10 @@ export const Route = createFileRoute('/')({
 });
 
 const products = [
-  { title: 'Mesas de jantar imponentes', text: 'O centro das atenções nas festas de fim de ano. Madeira maciça pela metade do preço.', image: hero.url, tag: 'PARA REUNIR A FAMÍLIA' },
+  { title: 'Mesas de jantar imponentes', text: 'O centro das atenções nas festas de fim de ano. Madeira maciça pela metade do preço.', image: diningTable.url, tag: 'PARA REUNIR A FAMÍLIA' },
   { title: 'Conjuntos de varanda & gourmet', text: 'Seu espaço de receber, completo. Peças para compartilhar bons momentos no Natal e Réveillon.', image: benches.url, tag: 'PARA RECEBER BEM' },
   { title: 'Namoradeiras & poltronas', text: 'Charme e aconchego para jardins, decks e varandas. Seu novo lugar favorito de descanso.', image: chairs.url, tag: 'PARA APROVEITAR A VIDA' },
-  { title: 'Cristaleiras, buffets & aparadores', text: 'Elegância e organização em madeira nobre. Toda a linha com 50% de desconto.', image: buffet.url, tag: 'PARA COMPOR SEU LAR' },
+  { title: 'Cristaleiras, buffets & aparadores', text: 'Elegância e organização em madeira nobre. Toda a linha com 50% de desconto.', image: sideboard.url, tag: 'PARA COMPOR SEU LAR' },
   { title: 'Pranchas orgânicas únicas', text: 'Design natural e exclusivo. A personalidade da madeira em peças únicas com 50% OFF.', image: null, tag: 'DESIGN DA NATUREZA' },
   { title: 'Sofás em couro legítimo', text: 'O conforto do couro encontra a estrutura duradoura da madeira maciça. Pela metade do valor.', image: null, tag: 'CONFORTO QUE PERMANECE' },
 ];
