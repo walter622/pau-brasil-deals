@@ -13,6 +13,7 @@ import benches from '@/assets/benches.asset.json';
 import diningTable from '@/assets/mesa-showroom.jpeg.asset.json';
 import sideboard from '@/assets/aparador-showroom.jpeg.asset.json';
 import delivery from '@/assets/entrega-propria.webp.asset.json';
+import campaignSeal from '@/assets/campaign-seal.png.asset.json';
 
 export const Route = createFileRoute('/')({
   head: () => ({ meta: [
@@ -20,8 +21,6 @@ export const Route = createFileRoute('/')({
     { name: 'description', content: 'Dias 6, 7 e 8 de novembro — apenas 3 dias! Móveis rústicos premium em madeira maciça com 50% de desconto e a pronta-entrega. Peças únicas e exclusivas — estoque limitado de pátio e showroom.' },
     { property: 'og:title', content: 'Black Pau Brasil com 50% de desconto em toda a loja Pau Brasil' },
     { property: 'og:description', content: 'Dias 6, 7 e 8 de novembro — apenas 3 dias! Móveis rústicos premium em madeira maciça com 50% de desconto e a pronta-entrega.' },
-    { property: 'og:image', content: diningTable.url },
-    { name: 'twitter:image', content: diningTable.url },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
   ] }),
@@ -58,11 +57,14 @@ function Catalogue() {
 function Index() {
   return <main>
     <section className="hero-section">
-      <img className="hero-photo" src={diningTable.url} alt="Mesa rústica de madeira maciça com cadeiras no showroom Pau Brasil" fetchPriority="high" />
-      <div className="page-wrap">
-        <header className="campaign-header border-b border-hero-line"><img src={logo.url} alt="Pau Brasil" className="brand-mark" /></header>
+      <div className="hero-banner">
+        <img className="hero-photo" src={diningTable.url} alt="Mesa rústica de madeira maciça com cadeiras no showroom Pau Brasil" fetchPriority="high" />
+        <img className="campaign-seal" src={campaignSeal.url} alt="Selo da campanha Black Friday 50% OFF" fetchPriority="high" width={500} height={500} />
+      </div>
+      <div className="page-wrap hero-intro">
+        <header className="campaign-header"><img src={logo.url} alt="Pau Brasil" className="brand-mark" /></header>
         <div className="hero-content reveal">
-          <h1 className="hero-title">Black Pau Brasil <span className="block text-offer">com 50% de desconto</span><span className="mt-3 block text-3xl">em toda a loja Pau Brasil</span></h1>
+          <h1 className="hero-title">Black Pau Brasil <span className="text-offer">com 50% de desconto</span><span className="hero-subtitle">em toda a loja Pau Brasil</span></h1>
           <p className="hero-description mt-5">Dias 6, 7 e 8 de novembro — apenas 3 dias!</p>
           <p className="hero-description">Móveis rústicos premium em madeira maciça com 50% de desconto e a pronta-entrega.</p>
           <p className="hero-description mt-3">Peças únicas e exclusivas — estoque limitado de pátio e showroom.</p>
@@ -70,9 +72,9 @@ function Index() {
         </div>
       </div>
     </section>
-    <section className="section-space"><div className="page-wrap story-grid"><img className="story-photo" src={family.url} alt="Família reunida à mesa de madeira" loading="lazy" /><div><h2 className="section-heading">A essência da madeira<br />transformada em arte</h2><p className="section-copy mt-5">Há mais de 30 anos, a Pau Brasil Móveis Rústicos transforma casas e espaços de alto padrão com móveis artesanais em madeira maciça.</p><p className="section-copy mt-4">Sofisticação natural, tradição e exclusividade se unem em cada peça feita à mão.</p><p className="section-copy mt-4">Durante a BLACK PAU BRASIL, você terá acesso a condições inéditas de <strong className="text-forest">50% OFF em toda a nossa linha de móveis de luxo.</strong></p><VipButton className="mt-7" /></div></div></section>
-    <section className="section-space bg-secondary"><div className="page-wrap history-grid"><div><h2 className="section-heading">Nossa história<br />e autoridade</h2></div><div><p className="section-copy">Desde 1993, a Pau Brasil é referência em móveis de madeira maciça, dormentes e cruzetas selecionadas, oferecendo peças únicas para clientes exigentes em todo o Brasil.</p><p className="section-copy mt-4">Mais de 35.000 clientes atendidos ao longo de 3 décadas.</p><p className="section-copy mt-4">Produção artesanal, com madeira de origem sustentável e acabamentos feitos à mão.</p><p className="section-copy mt-4">Entrega própria, segura e especializada.</p><VipButton className="mt-7" /></div></div></section>
-    <section className="section-space bg-hero text-hero-foreground"><div className="page-wrap"><h2 className="section-heading">Nossos Diferenciais</h2><div className="differentials">{differentials.map((text,i) => <div className="differential" key={text}><span className="differential-number">0{i+1}</span><Check className="size-5 shrink-0 text-offer" /><p>{text}</p></div>)}</div><VipButton className="mt-8" /></div></section>
+    <section className="section-space"><div className="page-wrap story-grid"><div><h2 className="section-heading">A essência da madeira<br />transformada em arte</h2><p className="section-copy mt-5">Há mais de 30 anos, a Pau Brasil Móveis Rústicos transforma casas e espaços de alto padrão com móveis artesanais em madeira maciça.</p><p className="section-copy mt-4">Sofisticação natural, tradição e exclusividade se unem em cada peça feita à mão.</p><p className="section-copy mt-4">Durante a BLACK PAU BRASIL, você terá acesso a condições inéditas de <strong className="text-forest">50% OFF em toda a nossa linha de móveis de luxo.</strong></p><VipButton className="mt-7" /></div><img className="story-photo" src={chairs.url} alt="Cadeiras Pavão de madeira maciça no showroom Pau Brasil" loading="lazy" /></div></section>
+    <section className="section-space history-section"><div className="page-wrap"><h2 className="section-heading text-center">Nossa história<br />e autoridade</h2><div className="history-grid mt-9"><div className="history-points"><p className="section-copy">Desde 1993, a Pau Brasil é referência em móveis de madeira maciça, dormentes e cruzetas selecionadas, oferecendo peças únicas para clientes exigentes em todo o Brasil.</p><p className="section-copy">Mais de 35.000 clientes atendidos ao longo de 3 décadas.</p><p className="section-copy">Produção artesanal, com madeira de origem sustentável e acabamentos feitos à mão.</p><p className="section-copy">Entrega própria, segura e especializada.</p></div><div className="history-visual"><img className="story-photo" src={benches.url} alt="Conjunto de móveis rústicos Pau Brasil" loading="lazy" /><VipButton className="mt-7" /></div></div></div></section>
+    <section className="section-space"><div className="page-wrap differences-grid"><img className="story-photo" src={family.url} alt="Família reunida à mesa de madeira" loading="lazy" /><div><h2 className="section-heading">Nossos Diferenciais</h2><div className="differentials">{differentials.map(text => <div className="differential" key={text}><Check className="size-5 shrink-0 text-forest" /><p>{text}</p></div>)}</div><VipButton className="mt-8" /></div></div></section>
     <section className="event-band"><div className="page-wrap event-inner"><div><p className="eyebrow text-offer">BLACK PAU BRASIL — 50% OFF em Toda a Loja</p><h2 className="mt-3 text-5xl">6, 7 e 8 de Novembro</h2></div><div className="flex items-start gap-3"><MapPin className="mt-1 size-6 shrink-0 text-offer" /><p className="text-sm leading-7">Rodovia Castelo Branco, Km 65<br />Sentido Interior — Mairinque - SP</p></div></div><div className="page-wrap mt-7"><VipButton /></div></section>
     <Catalogue />
     <section className="section-space bg-secondary"><div className="page-wrap delivery-grid"><img className="delivery-photo" src={delivery.url} alt="Caminhão da Pau Brasil para entrega própria e segura" loading="lazy" /><div><h2 className="section-heading">Entrega própria<br />e segura</h2><p className="section-copy mt-5">Montagem profissional, transporte cuidadoso e prazos garantidos para o seu fim de ano.</p><p className="section-copy mt-4">Cada entrega é feita pela equipe Pau Brasil, garantindo a qualidade do início ao fim.</p><VipButton className="mt-7" /></div></div></section>
