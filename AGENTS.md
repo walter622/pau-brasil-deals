@@ -14,3 +14,4 @@
 - Centralize the campaign destination and campaign data in a browser-safe module so every campaign CTA uses the same destination.
 - Use original furniture photos hosted through Lovable Assets; never substitute generated products for the real catalogue.
 - Drive the countdown from the event start in the São Paulo timezone and show explicit ongoing/ended states to avoid misleading urgency.
+- Render the category-name ticker as duplicated CSS-animated groups with the duplicate hidden from assistive technology and a static wrapped layout for reduced-motion preferences, so the strip loops accessibly without another carousel dependency.

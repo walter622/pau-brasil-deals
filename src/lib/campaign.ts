@@ -8,6 +8,8 @@ export function getEventStatus(now: number) {
   return 'upcoming';
 }
 
+export const catalogueCategories = ['Dormentes', 'Cadeiras Pavão', 'Aparadores', 'Mesas Rústicas', 'Conjuntos Gourmet', 'Espreguiçadeiras'] as const;
+
 export const faqs = [
   ['O que é a BLACK PAU BRASIL?', 'O maior evento do ano na Pau Brasil, com 50% OFF em toda a loja de móveis premium em madeira definitiva a pronta-entrega.'],
   ['Onde acontece o evento?', 'Na loja e pátio de Mairinque - SP. Na Rod. Castelo Branco, Km 65 – Mairinque-SP, sentido interior, a 2 minutos do Catarina Fashion Outlet.'],
