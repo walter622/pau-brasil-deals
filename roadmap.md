@@ -1,5 +1,5 @@
 # Black Pau Brasil
-- [ ] Restore the latest supplied document copy verbatim without invented or rewritten text; verify against the original.
+- [x] Restore the latest supplied document copy verbatim without invented or rewritten text; verify against the original.
 - [x] Create campaign page with revised copy, original furniture imagery and new WhatsApp link.
 - [x] Add countdown, catalogue carousel and FAQ.
 - [x] Verify page rendering and interactions.
