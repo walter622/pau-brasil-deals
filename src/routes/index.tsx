@@ -4,6 +4,8 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight, Hammer, Headset, MapPin, MessageCircle, Package, TreePine, Truck } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { VipButton } from '@/components/campaign-controls';
+import carlosPhoto from '@/assets/carlos.jpg';
+import patriciaPhoto from '@/assets/patricia.jpg';
 import { catalogueCategories, differentials, faqs, testimonials, VIP_URL } from '@/lib/campaign';
 import logo from '@/assets/logo.asset.json';
 import family from '@/assets/family.asset.json';
@@ -60,10 +62,11 @@ function Catalogue() {
 function Index() {
   return <main>
     <section className="hero">
-      <img className="hero-photo" src={diningTable.url} alt="Mesa rústica de madeira maciça com cadeiras no showroom Pau Brasil" fetchPriority="high" />
-      <div className="hero-overlay" />
-      <div className="hero-inner">
+      <div className="hero-media">
+        <img className="hero-photo" src={diningTable.url} alt="Mesa rústica de madeira maciça com cadeiras no showroom Pau Brasil" fetchPriority="high" />
         <img className="hero-seal" src={campaignSeal.url} alt="Selo da campanha Black Friday 50% OFF" width={500} height={500} fetchPriority="high" />
+      </div>
+      <div className="hero-inner">
         <img src={logo.url} alt="Pau Brasil" className="hero-logo" />
         <p className="hero-date">Dias 6, 7 e 8 de novembro — apenas 3 dias!</p>
         <h1 className="hero-title">Black Pau Brasil com <strong>50% de desconto</strong> em toda a loja Pau Brasil</h1>
@@ -111,7 +114,7 @@ function Index() {
 
     <section className="lp-section bg-sand"><div className="page-wrap">
       <div className="section-head center reveal"><h2 className="section-heading">Depoimentos de clientes</h2></div>
-      <div className="testimonials">{testimonials.map(t => <figure className="testimonial reveal" key={t.name}><span className="quote-mark" aria-hidden="true">“</span><blockquote>{t.quote}</blockquote><figcaption><span className="avatar" aria-hidden="true">{t.name[0]}</span><span><strong>{t.name}</strong><small>{t.location}</small></span></figcaption></figure>)}</div>
+      <div className="testimonials">{testimonials.map(t => <figure className="testimonial reveal" key={t.name}><span className="quote-mark" aria-hidden="true">“</span><blockquote>{t.quote}</blockquote><figcaption><img className="avatar" src={t.name.startsWith('Carlos') ? carlosPhoto : patriciaPhoto} alt={t.name} width={56} height={56} loading="lazy" /><span><strong>{t.name}</strong><small>{t.location}</small></span></figcaption></figure>)}</div>
       <div className="cta-row"><VipButton /></div>
     </div></section>
 
