@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { ArrowLeft, ArrowRight, Hammer, Headset, MapPin, Package, TreePine, Truck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Hammer, Headset, MapPin, Package, TreePine, Truck, type LucideIcon } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { VipButton, WhatsAppIcon } from '@/components/campaign-controls';
 import carlosPhoto from '@/assets/carlos.jpg';
@@ -34,7 +34,7 @@ const products = [
   { title: 'Cadeiras Pavão', image: chairs.url },
   { title: 'Aparadores', image: sideboard.url },
 ];
-const icons = [TreePine, Hammer, Headset, Truck, Package];
+const icons: LucideIcon[] = [TreePine, Hammer, Headset, Truck, Package];
 
 function Catalogue() {
   const [ref, api] = useEmblaCarousel({ align: 'start', loop: true });
@@ -91,7 +91,7 @@ function Index() {
 
     <section className="lp-section bg-cream"><div className="page-wrap split">
       <div className="split-text wide reveal"><h2 className="section-heading">Nossos Diferenciais</h2>
-        <ul className="differentials">{differentials.map((text, i) => { const Icon = icons[i]; return <li key={text}><Icon strokeWidth={1.25} className="diff-icon" /><p>{text}</p></li>; })}</ul>
+        <ul className="differentials">{differentials.map((text, i) => { const Icon = icons[i] ?? TreePine; return <li key={text}><Icon strokeWidth={1.25} className="diff-icon" /><p>{text}</p></li>; })}</ul>
         <VipButton /></div>
       <img className="split-photo reveal" src={family.url} alt="Família reunida à mesa de madeira" loading="lazy" />
     </div></section>
