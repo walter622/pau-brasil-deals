@@ -9,9 +9,23 @@ export function getEventStatus(now: number) {
 }
 
 export const faqs = [
-  ['Em quais dias acontecerá a Black Pau Brasil?', 'Exclusivamente nos dias 6, 7 e 8 de novembro de 2026: sexta, sábado e domingo, no nosso showroom em Mairinque/SP.'],
-  ['O desconto de 50% OFF vale para toda a loja?', 'Sim! Toda a loja com 50% OFF: a campanha contempla 100% do nosso pátio e showroom de móveis a pronta-entrega. As peças são limitadas e não haverá reposição de estoque com esse desconto.'],
-  ['Por que entrar no Grupo VIP do WhatsApp?', 'No Grupo VIP você recebe o catálogo antecipado, consulta fotos reais das peças e tem prioridade de atendimento para reservar os seus móveis. As reservas são feitas por ordem de chegada.'],
-  ['Onde fica o showroom da promoção?', 'Em Mairinque/SP, na Rodovia Presidente Castello Branco, Km 65, sentido interior — a apenas 2 minutos do Catarina Fashion Outlet.'],
-  ['A entrega e a montagem são feitas antes das festas?', 'Sim! O estoque da Black é a pronta-entrega. Nossa frota e equipe própria realizam o agendamento para você receber os móveis antes do Natal e Réveillon. Consulte a equipe sobre a data de entrega para o seu endereço.'],
+  ['O que é a BLACK PAU BRASIL?', 'O maior evento do ano na Pau Brasil, com 50% OFF em toda a loja de móveis premium em madeira definitiva a pronta-entrega.'],
+  ['Onde acontece o evento?', 'Na loja e pátio de Mairinque - SP. Na Rod. Castelo Branco, Km 65 – Mairinque-SP, sentido interior, a 2 minutos do Catarina Fashion Outlet.'],
+  ['Posso levar na hora?', 'Sim! Temos mais de 1.000 peças de showroom e pátio em pronta-entrega.'],
+  ['O desconto de 50% é para toda a loja?', 'Sim! Todo o estoque de pátio e showroom estará com 50% OFF durante os 3 dias de evento.'],
+  ['Quais são as formas de pagamento?', 'Cartão de crédito, transferência bancária e condições especiais à vista.'],
+  ['A entrega é garantida antes do fim do ano?', 'Sim. A Pau Brasil possui frota e equipe própria para agendar e realizar a entrega e montagem perfeita a tempo das festas.'],
+] as const;
+
+export const differentials = [
+  'Madeira 100% constituída de origem certificada',
+  'Acabamento artesanal, com personalidade única em cada peça',
+  'Consultoria personalizada de atendimento',
+  'Entrega própria, rápida e cuidadosa para o fim do ano',
+  'Mais de 1.000 peças em estoque à pronta-entrega com 50% OFF',
+] as const;
+
+export const testimonials = [
+  { name: 'Carlos', location: 'Alphaville-SP', quote: 'A Pau Brasil é confiança. Comprei uma mesa de demolição linda, baita mesa e eles entregaram antes do prazo..' },
+  { name: 'Patrícia', location: 'Itu-SP', quote: 'Comprei um conjunto de dormentes e a entrega foi super rápida. Atendimento nota 10!' },
 ] as const;

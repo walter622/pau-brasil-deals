@@ -3,7 +3,7 @@ import { ArrowUpRight, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { EVENT_END, EVENT_START, getEventStatus, VIP_URL } from '@/lib/campaign';
 
-export function VipButton({ children = 'Entrar no Grupo VIP do WhatsApp', className = '' }: { children?: React.ReactNode; className?: string }) {
+export function VipButton({ children = 'Clique e entre no grupo exclusivo do WhatsApp', className = '' }: { children?: React.ReactNode; className?: string }) {
   return <Button asChild variant="vip" className={`vip-button ${className}`}><a href={VIP_URL} target="_blank" rel="noopener noreferrer"><MessageCircle className="size-5" />{children}<ArrowUpRight className="size-4" /></a></Button>;
 }
 
