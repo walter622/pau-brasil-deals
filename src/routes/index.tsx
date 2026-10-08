@@ -1,9 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { ArrowLeft, ArrowRight, Hammer, Headset, MapPin, MessageCircle, Package, TreePine, Truck } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Hammer, Headset, MapPin, Package, TreePine, Truck } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { VipButton } from '@/components/campaign-controls';
+import { VipButton, WhatsAppIcon } from '@/components/campaign-controls';
 import carlosPhoto from '@/assets/carlos.jpg';
 import patriciaPhoto from '@/assets/patricia.jpg';
 import { catalogueCategories, differentials, faqs, testimonials, VIP_URL } from '@/lib/campaign';
@@ -132,6 +132,6 @@ function Index() {
       <a className="footer-ig" href="https://www.instagram.com/lojapaubrasil/" target="_blank" rel="noopener noreferrer">@lojapaubrasil</a>
     </div></footer>
 
-    <a className="wa-float" href={VIP_URL} target="_blank" rel="noopener noreferrer" aria-label="Entrar no grupo exclusivo do WhatsApp"><MessageCircle className="size-7" /></a>
+    <a className="wa-float" href={VIP_URL} target="_blank" rel="noopener noreferrer" aria-label="Entrar no grupo exclusivo do WhatsApp"><WhatsAppIcon /></a>
   </main>;
 }
