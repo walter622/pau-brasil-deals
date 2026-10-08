@@ -63,6 +63,7 @@ function Index() {
   return <main>
     <section className="hero">
       <div className="hero-media">
+        <img className="hero-blur" src={diningTable.url} alt="" aria-hidden="true" />
         <img className="hero-photo" src={diningTable.url} alt="Mesa rústica de madeira maciça com cadeiras no showroom Pau Brasil" fetchPriority="high" />
         <img className="hero-seal" src={campaignSeal.url} alt="Selo da campanha Black Friday 50% OFF" width={500} height={500} fetchPriority="high" />
       </div>
