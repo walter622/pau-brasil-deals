@@ -54,13 +54,13 @@
 
  /* hero */
 .hero { position:relative; display:block; overflow:hidden; background:var(--forest); color:var(--hero-foreground); text-align:center; }
-.hero-media { position:relative; height:auto; overflow:visible; }
+.hero-media { position:relative; height:clamp(260px, 30vw, 400px); overflow:visible; }
 .hero-blur { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:blur(18px) brightness(.85); transform:scale(1.05); clip-path:inset(0); }
 .hero-media::before { content:""; position:absolute; inset:0; overflow:hidden; }
-.hero-photo { position:relative; display:block; width:min(1020px, 100%); height:auto; margin-inline:auto; object-fit:contain; object-position:50% 50%; }
+.hero-photo { position:relative; display:block; width:min(1020px, 100%); height:100%; margin-inline:auto; object-fit:cover; object-position:50% 50%; }
 .hero-overlay { display:none; }
-.hero-inner { position:relative; z-index:1; width:min(860px, calc(100% - 40px)); margin-inline:auto; padding:120px 0 64px; display:flex; flex-direction:column; align-items:center; animation:rise .8s ease both; }
-.hero-seal { position:absolute; left:50%; bottom:-100px; z-index:2; width:min(280px, 55vw); height:auto; transform:translateX(-50%); filter:drop-shadow(0 12px 28px oklch(0 0 0 / .45)); }
+.hero-inner { position:relative; z-index:1; width:min(860px, calc(100% - 40px)); margin-inline:auto; padding:64px 0 64px; display:flex; flex-direction:column; align-items:center; animation:rise .8s ease both; }
+.hero-seal { position:absolute; left:50%; bottom:-120px; z-index:2; width:min(420px, 70vw); height:auto; transform:translateX(-50%); filter:drop-shadow(0 12px 28px oklch(0 0 0 / .45)); }
 .hero-logo { width:130px; height:auto; filter:brightness(0) invert(1); }
 .hero-date { margin-top:24px; color:var(--offer); font-size:clamp(20px, 2.4vw, 30px); font-weight:800; letter-spacing:.01em; text-transform:uppercase; line-height:1.2; }
 .hero-title { margin-top:18px; font-size:clamp(30px, 3.6vw, 48px); font-weight:500; line-height:1.15; }
@@ -190,8 +190,8 @@
 @media (max-width:560px){ .vip-button.vip-button { font-size:12.5px; padding:14px 18px; } }
 
 @media (max-width: 900px) {
-  .hero-media { height:auto; }
-  .hero-seal { width:min(240px, 55vw); bottom:-80px; }
-  .hero-inner { padding:100px 0 56px; }
+  .hero-media { height:56vw; }
+  .hero-seal { width:66vw; bottom:-22vw; }
+  .hero-inner { padding:12vw 0 56px; }
   .hero-date { font-size:20px; }
 }
