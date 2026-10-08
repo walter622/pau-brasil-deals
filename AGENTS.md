@@ -13,5 +13,6 @@
 - Keep the Black Pau Brasil campaign as one continuous index page; the supplied conversion blocks form one campaign, not separate navigable pages.
 - Centralize the campaign destination and campaign data in a browser-safe module so every campaign CTA uses the same destination.
 - Use original furniture photos hosted through Lovable Assets; never substitute generated products for the real catalogue.
+- Compose the campaign opening as a full-width furniture photo with an overlapping uploaded seal and a centered campaign band, so the reference layout stays separate from campaign copy.
 - Drive the countdown from the event start in the São Paulo timezone and show explicit ongoing/ended states to avoid misleading urgency.
 - Render the category-name ticker as duplicated CSS-animated groups with the duplicate hidden from assistive technology and a static wrapped layout for reduced-motion preferences, so the strip loops accessibly without another carousel dependency.
