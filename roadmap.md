@@ -3,4 +3,4 @@
 - [x] Add countdown, catalogue carousel and FAQ.
 - [x] Verify page rendering and interactions.
 - [x] Use the supplied JPG photos of the dining table and sideboard in their catalogue categories.
-- [ ] Add actual photos for organic slabs and leather sofas when the user supplies them; these categories currently link to the VIP catalogue without substitute photos.
+- [x] Apply the original Pau Brasil colors, supplied copy and replacement main photo; verify the revised design.
