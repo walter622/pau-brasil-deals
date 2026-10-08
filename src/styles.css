@@ -53,7 +53,7 @@
  .cta-row { display:flex; justify-content:center; margin-top:48px; }
 
  /* hero */
-.hero { position:relative; display:block; background:var(--forest); color:var(--hero-foreground); text-align:center; }
+.hero { position:relative; display:block; overflow:hidden; background:var(--forest); color:var(--hero-foreground); text-align:center; }
 .hero-media { position:relative; height:clamp(260px, 30vw, 400px); overflow:visible; }
 .hero-blur { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:blur(18px) brightness(.85); transform:scale(1.05); }
 .hero-media::before { content:""; position:absolute; inset:0; overflow:hidden; }
@@ -67,7 +67,7 @@
  .hero-title strong { font-weight:700; font-style:italic; color:var(--offer); }
  .hero-copy { margin-top:22px; max-width:600px; font-size:18px; color:var(--hero-muted); }
  .hero-copy strong { color:var(--hero-foreground); }
- .hero-scarcity { margin-top:18px; font-size:clamp(15px,1.6vw,19px); font-weight:800; text-transform:uppercase; color:var(--offer); }
+.hero-scarcity { margin-top:18px; font-size:clamp(15px,1.6vw,19px); font-weight:800; text-transform:uppercase; color:var(--offer); }
  .hero-cta { margin-top:34px; }
 
  /* split */
