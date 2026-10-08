@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { EVENT_START, EVENT_END, getEventStatus, VIP_URL, faqs } from '@/lib/campaign';
+import { EVENT_START, EVENT_END, getEventStatus, VIP_URL, faqs, catalogueCategories } from '@/lib/campaign';
 
 describe('Black Pau Brasil campaign', () => {
   it('uses the supplied VIP destination', () => {
@@ -11,5 +11,8 @@ describe('Black Pau Brasil campaign', () => {
     expect(getEventStatus(EVENT_END - 1)).toBe('live');
     expect(getEventStatus(EVENT_END)).toBe('ended');
   });
-  it('includes all five supplied FAQ topics', () => expect(faqs).toHaveLength(5));
+  it('includes all six supplied FAQ topics', () => expect(faqs).toHaveLength(6));
+  it('includes the supplied categories for the animated strip', () => {
+    expect(catalogueCategories).toEqual(['Dormentes', 'Cadeiras Pavão', 'Aparadores', 'Mesas Rústicas', 'Conjuntos Gourmet', 'Espreguiçadeiras']);
+  });
 });
