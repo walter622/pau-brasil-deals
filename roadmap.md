@@ -1,4 +1,5 @@
 # Black Pau Brasil
+- [x] Correct the rejected design against the original reference, preserving approved copy and photos; verify composition and interactions.
 - [x] Match the original landing-page design using current copy and approved photos, add the supplied campaign seal, and verify.
 - [x] Restore the latest supplied document copy verbatim without invented or rewritten text; verify against the original.
 - [x] Create campaign page with revised copy, original furniture imagery and new WhatsApp link.
