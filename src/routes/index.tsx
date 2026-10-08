@@ -80,7 +80,7 @@ function Index() {
 
     <section className="lp-section bg-sand"><div className="page-wrap split reverse">
       <div className="split-text reveal"><h2 className="section-heading">Nossa história e autoridade</h2><p className="section-copy">Desde 1993, a Pau Brasil é referência em móveis de madeira maciça, dormentes e cruzetas selecionadas, oferecendo <strong>peças únicas para clientes exigentes</strong> em todo o Brasil.</p><p className="section-copy">Mais de 35.000 clientes atendidos ao longo de 3 décadas.</p><p className="section-copy">Produção artesanal, com madeira de origem sustentável e acabamentos feitos à mão.</p><p className="section-copy">Entrega própria, segura e especializada.</p>
-        <dl className="stats"><div><dt>1993</dt><dd>Desde</dd></div><div><dt>+35.000</dt><dd>Clientes atendidos</dd></div><div><dt>+1.000</dt><dd>Peças em pronta-entrega</dd></div></dl>
+        <dl className="stats"><div><dt>1993</dt><dd>Referência em madeira maciça</dd></div><div><dt>+35.000</dt><dd>Clientes atendidos</dd></div><div><dt>+1.000</dt><dd>Peças em pronta-entrega</dd></div></dl>
         <VipButton /></div>
       <img className="split-photo reveal" src={benches.url} alt="Conjunto de móveis rústicos Pau Brasil" loading="lazy" />
     </div></section>
